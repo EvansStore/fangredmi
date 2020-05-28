@@ -3,14 +3,88 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"app-plus":{
+					
+					"titleNView":{
+						"searchInput":{
+							"align":"left",
+							"backgroundColor":"#f7f7f7",
+							"borderRadius":"4px",
+							"disabled":"true",
+							"placeholder":"evans",
+							"placeholderColor":"#cccccc"
+						},
+						"buttons":[{
+							"color":"#989898",
+							"colorPressed":"#fd6801",
+							"float":"left",
+							"fontSize":"22px",
+							"fontSrc":"/static/font/iconfont.ttf",
+							"text":"\ue67a"
+							
+						},
+						{
+							"color":"#989898",
+							"colorPressed":"#fd6801",
+							"float":"right",
+							"fontSize":"22px",
+							"fontSrc":"/static/font/iconfont.ttf",
+							"text":"\ue661"
+							
+						}
+						]
+					}
+				}
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/class/class",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/cart/cart",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/my/my",
+            "style" : {}
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarTitleText": "商城",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF"
+	},
+	
+	// 底部导航
+	"tabBar":{
+		"color":"#b1b1b1",
+		"selectedColor":"#fd6801",
+		"borderStyle":"black",
+		"backgroundColor":"#FFFFFF",
+		"list":[
+			{
+			"pagePath":"pages/index/index",
+			"iconPath":"./static/tabbar/index.png",
+			"selectedIconPath":"static/tabbar/indexSelected.png"
+		},
+		{
+			"pagePath":"pages/class/class",
+			"iconPath":"static/tabbar/class.png",
+			"selectedIconPath":"static/tabbar/classSelected.png"
+		},{
+			"pagePath":"pages/cart/cart",
+			"iconPath":"static/tabbar/cart.png",
+			"selectedIconPath":"static/tabbar/cartSelected.png"
+			
+		},{
+			"pagePath":"pages/my/my",
+			"iconPath":"static/tabbar/my.png",
+			"selectedIconPath":"static/tabbar/mySelected.png"
+		}
+		]
+		
 	}
+	
 }

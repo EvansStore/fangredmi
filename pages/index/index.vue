@@ -1,17 +1,24 @@
 <template>
 	<view class="content">
-		<image v-if="show" 
-		class="logo animated bounceIn fast" src="/static/logo.png"></image>
-		<view class="text-area">
-			<text class="title">{{title}}</text>
-			
-		</view>
+		<swiper :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000">
+			<swiper-item>
+				<view class="swiper-item">
+					<image src="../../static/images/demo/demo4.jpg" 
+					lazy-load
+					style="height: 350upx;"
+					></image>
+				</view>
+			</swiper-item>
+			<swiper-item>
+				<view class="swiper-item">
+					<image src="../../static/images/demo/demo4.jpg" 
+					lazy-load
+					style="height: 350upx;"
+					></image>
+				</view>
+			</swiper-item>
+			</swiper>
 		
-		<view class="btn">
-			<button type="default" @click="show = !show">我动了</button>
-		</view>
-		
-		<view class="iconfont icon-wode"></view>
 	</view>
 </template>
 
@@ -19,8 +26,7 @@
 	export default {
 		data() {
 			return {
-				title: 'Hello',
-				show:false
+			
 			}
 		},
 		onLoad() {
@@ -33,29 +39,5 @@
 </script>
 
 <style>
-	.content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin-top: 200rpx;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 50rpx;
-	}
-
-	.text-area {
-		display: flex;
-		justify-content: center;
-	}
-
-	.title {
-		font-size: 36rpx;
-		color: #8f8f94;
-	}
+	
 </style>
