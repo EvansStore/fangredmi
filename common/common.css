@@ -6,3 +6,19 @@ page {
 	line-height: 1.8;
 	background-color: #FFFFFF;
 }
+
+/* 图片宽度 */
+image  {width: 100%;}
+
+/* 主色调 */
+
+.mian-bg-color {
+	background-color: #FFB400;
+}
+
+.main-bg-hover-color{ background: rgba(253,104,1,0.85); }
+
+.mian-text-color{color: #FFB400;}
+
+/* 边框颜色 */
+.mian-border-color{border-color: #F1F1F1;}
