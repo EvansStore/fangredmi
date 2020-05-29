@@ -22,4 +22,6 @@
 	@import "/common/icon.css";
 	/* 公共样式 */
 	@import "/common/common.css";
+	/* 封装的样式 */
+	@import "/common/zcm-main.css";
 </style>

@@ -1,6 +1,6 @@
 <template>
 	<view>
-		
+		adas 
 	</view>
 </template>
 
